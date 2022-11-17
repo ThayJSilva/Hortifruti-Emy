@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contato</title>
+</head>
+<body>
+    
+    <div class="menu">
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="contatos.html">Contato</a>
+        </li>
+
+    </ul>
+    </div>
+        
+    </div>
+
+    <div class="text-center" id="titulo">
+        <h1>Contatos e informações</h1>
+    <p>preencha o formulario abaixo:</p>
+        
+</div>
+
+    
+    
+    <div class="container">
+        <div class="p-30">
+            <form class="form">
+                <label for="nome">NOME:</label>
+                <input type="text" name="nome" id="nome"  onkeyup="validaNome()">
+                <div class="mb-10 text-red" id="erroNome"></div>
+                 
+            
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" onkeyup="validaEmail()">
+                <div class="mb-10 text-red" id="erroEmail"></div>
+            
+                <label for="nasc">Data de nascimento:</label>
+                 <input type="date" name="nasc" id="nasc" class="mb-10">
+            
+                 <label for="assunto">Assunto:</label>
+                 <textarea name="assunto" id="assunto"  onkeyup="validaAssunto()" cols="30" rows="10"></textarea>
+                 <div class="mb-10 text-red" id="erroAssunto"></div>
+                </form>
+
+                <button class="botão">Enviar</button>
+         </div>
+
+        <div class="p-30">
+            <p>
+                Endereço da empresa: 
+                Estr. do Tindiba, 2113 - Taquara, Rio de Janeiro - RJ, 22740-360
+        
+             </p>
+        
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.7257899065157!2d-43.3747224860793!3d-22.923482785003312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd8f6d1bfe6f3%3A0xed915c50f503a7dd!2sHortifruti%20Taquara!5e0!3m2!1spt-BR!2sbr!4v1667920622350!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa" onmouseover="mapaZoo()"
+             onmouseout="mapaNormal()"></iframe>
+
+        </div>
+       
+    
+
+
+    </div>
+
+    
+
+<script src="assets/js/script.js"></script>
+
+
+     
+</body>
+
+</html>
